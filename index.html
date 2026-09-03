@@ -1,87 +1,152 @@
 <!DOCTYPE html>
-<html lang="id" data-bs-theme="dark">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio Teknis - [Nama Kamu]</title>
-    <!-- Bootstrap CSS CDN -->
+    <title>Beny Prasetyo | Technical Portfolio</title>
+
+    <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-secondary">
+    <!-- 1. NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top border-bottom border-secondary shadow-sm">
         <div class="container">
-            <a class="navbar-link navbar-brand fw-bold" href="#">TechPortfolio.</a>
+            <a class="navbar-brand fw-bold text-primary" href="#"><i class="bi bi-terminal-fill me-2"></i>Beny | Technical Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">Tentang</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Proyek</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Kontak</a></li>
+                <ul class="navbar-nav ms-auto fw-medium">
+                    <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#docs">Documentation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="py-5 text-center container">
-        <div class="row py-lg-5">
-            <div class="col-lg-8 col-md-8 mx-auto">
-                <h1 class="fw-bold">Database & Systems Specialist</h1>
-                <p class="lead text-body-secondary mt-3">
-                    Fokus pada pengelolaan basis data, otomatisasi skrip pencadangan (*backup & sync*), pemeliharaan infrastruktur, dan optimasi kueri sistem.
+    <!-- 2. HERO SECTION -->
+    <section id="about" class="py-5 text-center container">
+        <div class="row py-lg-5 align-items-center">
+            <div class="col-lg-10 mx-auto">
+                <span class="badge bg-primary-subtle text-primary border border-primary-subtle px-3 py-2 rounded-pill mb-3">
+                    <i class="bi bi-gear-wide-connected me-1"></i> Systems, Database & Automation
+                </span>
+                <h1 class="display-4 fw-bold mt-2">Database & Systems Specialist</h1>
+                <p class="lead text-body-secondary mt-3 mx-auto" style="max-width: 800px;">
+                    Focused on enterprise database administration, automated backup & synchronization scripting, infrastructure maintenance, and query optimization.
                 </p>
-                <p>
-                    <a href="#projects" class="btn btn-primary my-2 me-2">Lihat Proyek</a>
-                    <a href="#contact" class="btn btn-outline-light my-2">Hubungi Saya</a>
-                </p>
+                <div class="d-flex justify-content-center gap-3 mt-4">
+                    <a href="#projects" class="btn btn-primary btn-lg"><i class="bi bi-code-slash me-2"></i>View Projects</a>
+                    <a href="#docs" class="btn btn-outline-info btn-lg"><i class="bi bi-journal-code me-2"></i>Documentation</a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="py-5 bg-body-tertiary">
+    <!-- 3. SKILLS & TECHNICAL STACK -->
+    <section id="skills" class="py-5 bg-body-tertiary border-top border-bottom border-secondary-subtle">
         <div class="container">
-            <h2 class="fw-bold mb-4 text-center">Proyek Teknis</h2>
+            <h2 class="fw-bold mb-4 text-center"><i class="bi bi-cpu me-2 text-primary"></i>Core Competencies & Tools</h2>
+            <div class="row g-4">
+
+                <!-- Skill Card 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="text-primary fs-3 mb-2"><i class="bi bi-database-fill-gear"></i></div>
+                            <h5 class="card-title fw-bold">Database Management</h5>
+                            <p class="card-text text-body-secondary small">
+                                Proficient in SQL Server & PostgreSQL administration, data integrity maintenance, T-SQL query optimization, and multi-tier table schema design.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="text-success fs-3 mb-2"><i class="bi bi-file-earmark-code-fill"></i></div>
+                            <h5 class="card-title fw-bold">Automation & Scripting</h5>
+                            <p class="card-text text-body-secondary small">
+                                Automating routine server operations via Batch Scripting, Bash, and Robocopy, alongside scheduled backup orchestration (Daily/Weekly/Monthly).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body">
+                            <div class="text-info fs-3 mb-2"><i class="bi bi-hdd-network-fill"></i></div>
+                            <h5 class="card-title fw-bold">Systems & Infrastructure</h5>
+                            <p class="card-text text-body-secondary small">
+                                Enterprise Linux (Red Hat) environment management, network server configurations, system health monitoring, and technical troubleshooting.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FEATURED PROJECTS -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="fw-bold mb-4 text-center"><i class="bi bi-diagram-3 me-2 text-primary"></i>Featured Technical Projects</h2>
             <div class="row row-cols-1 row-cols-md-2 g-4">
 
-                <!-- Contoh Card Proyek 1 -->
+                <!-- Project 1 -->
                 <div class="col">
-                    <div class="card h-100 shadow-sm border-0">
+                    <div class="card h-100 shadow border-secondary-subtle">
                         <div class="card-body">
-                            <div class="mb-2">
+                            <div class="mb-3">
                                 <span class="badge bg-primary">SQL Server</span>
-                                <span class="badge bg-secondary">Batch Scripting</span>
+                                <span class="badge bg-secondary">Batch Script</span>
                                 <span class="badge bg-info text-dark">Robocopy</span>
                             </div>
-                            <h5 class="card-title fw-bold">Automated Database Backup & Replication</h5>
+                            <h5 class="card-title fw-bold">Automated Multi-Tier Database Backup System</h5>
                             <p class="card-text text-body-secondary mt-2">
-                                Merancang dan mengimplementasikan sistem otomasi pencadangan basis data terintegrasi. Mencakup redundansi jaringan otomatis via Robocopy sebelum proses rotasi berkas lokal (harian, mingguan, bulanan).
+                                <strong>Problem:</strong> Manual database backups are error-prone and pose high data loss risks during server downtime.<br>
+                                <strong>Solution:</strong> Engineered an automated multi-tier backup pipeline (daily, weekly, monthly) with automated network redundancy via Robocopy and file lifecycle rotation.
                             </p>
                         </div>
                         <div class="card-footer bg-transparent border-0 pb-3">
-                            <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-github"></i> Lihat Detail Script</a>
+                            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                                <i class="bi bi-info-circle me-1"></i> Implementation Details
+                            </button>
                         </div>
                     </div>
                 </div>
 
-                <!-- Contoh Card Proyek 2 -->
+                <!-- Project 2 -->
                 <div class="col">
-                    <div class="card h-100 shadow-sm border-0">
+                    <div class="card h-100 shadow border-secondary-subtle">
                         <div class="card-body">
-                            <div class="mb-2">
+                            <div class="mb-3">
                                 <span class="badge bg-success">T-SQL</span>
-                                <span class="badge bg-dark">Database Tuning</span>
+                                <span class="badge bg-warning text-dark">Database Tuning</span>
+                                <span class="badge bg-danger">Data Integrity</span>
                             </div>
-                            <h5 class="card-title fw-bold">Transaction Logic & Price Refactoring</h5>
+                            <h5 class="card-title fw-bold">Multi-Level Table Schema Optimization & Refactoring</h5>
                             <p class="card-text text-body-secondary mt-2">
-                                Mengoptimalkan struktur tabel bertingkat (*Header-Detail*) dan kalkulasi *computed columns* untuk memastikan akurasi data finansial dan sinkronisasi harga secara konsisten.
+                                <strong>Problem:</strong> Inconsistent transaction calculations and sluggish query execution times on complex multi-tier tables.<br>
+                                <strong>Solution:</strong> Restructured T-SQL queries, optimized Header-Detail table indexing, and implemented computed columns to ensure data accuracy and instant transaction processing.
                             </p>
                         </div>
                         <div class="card-footer bg-transparent border-0 pb-3">
-                            <a href="#" class="btn btn-sm btn-outline-primary"><i class="bi bi-file-earmark-code"></i> Studi Kasus</a>
+                            <button class="btn btn-sm btn-outline-primary" data-bs-toggle="modal" data-bs-target="#project2Modal">
+                                <i class="bi bi-info-circle me-1"></i> Implementation Details
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -90,12 +155,129 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="py-4 text-center border-top border-secondary">
-        <p class="text-body-secondary mb-0">&copy; 2026 - Dibuat dengan Bootstrap 5</p>
+    <!-- 5. TECHNICAL DOCUMENTATION & SOP -->
+    <section id="docs" class="py-5 bg-body-tertiary border-top border-bottom border-secondary-subtle">
+        <div class="container">
+            <h2 class="fw-bold mb-4 text-center"><i class="bi bi-book me-2 text-info"></i>Documentation & SOPs</h2>
+            <p class="text-center text-body-secondary mb-4">Standard Operating Procedures (SOPs), technical cheat sheets, and architecture documentation maintained for operational reliability.</p>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <!-- Doc 1 -->
+                <div class="col">
+                    <div class="card h-100 border-secondary-subtle shadow-sm">
+                        <div class="card-body">
+                            <div class="badge bg-info text-dark mb-2">SOP Manual</div>
+                            <h5 class="card-title fw-bold">Database Backup & Disaster Recovery Guide</h5>
+                            <p class="card-text text-body-secondary small">
+                                Standard procedure for database disaster recovery, point-in-time restoration, and scheduled backup archive rotation.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="#" class="btn btn-sm btn-outline-info disabled"><i class="bi bi-file-earmark-pdf me-1"></i>View Document</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doc 2 -->
+                <div class="col">
+                    <div class="card h-100 border-secondary-subtle shadow-sm">
+                        <div class="card-body">
+                            <div class="badge bg-secondary mb-2">Cheat Sheet</div>
+                            <h5 class="card-title fw-bold">Robocopy & Batch Automation Manual</h5>
+                            <p class="card-text text-body-secondary small">
+                                A reference guide containing tested Robocopy parameters, network directory mirroring, and safe production batch syntax.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="#" class="btn btn-sm btn-outline-info disabled"><i class="bi bi-code-square me-1"></i>View Cheat Sheet</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Doc 3 -->
+                <div class="col">
+                    <div class="card h-100 border-secondary-subtle shadow-sm">
+                        <div class="card-body">
+                            <div class="badge bg-primary mb-2">Sysadmin</div>
+                            <h5 class="card-title fw-bold">Red Hat Enterprise Setup Checklist</h5>
+                            <p class="card-text text-body-secondary small">
+                                Comprehensive checklist for baseline Linux server configuration, repository setup, file permissions, and security hardening.
+                            </p>
+                        </div>
+                        <div class="card-footer bg-transparent border-0">
+                            <a href="#" class="btn btn-sm btn-outline-info disabled"><i class="bi bi-check-all me-1"></i>View Checklist</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- MODALS -->
+    <div class="modal fade" id="project1Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold">Detail: Automated Database Backup</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Key System Features:</h6>
+                    <ul>
+                        <li>Non-intrusive database backup execution scheduled during off-peak hours.</li>
+                        <li>Automated replication to Network Attached Storage (NAS) via Robocopy.</li>
+                        <li>Automated lifecycle management: purges outdated daily logs to optimize storage overhead.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="project2Modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 fw-bold">Detail: Database Schema Refactoring</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h6>Key System Features:</h6>
+                    <ul>
+                        <li>Eliminated transactional anomalies using strict integrity constraints and triggers.</li>
+                        <li>Implemented computed columns to minimize memory footprint.</li>
+                        <li>Enhanced index execution plans for high-speed record querying.</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. CONTACT & FOOTER -->
+    <section id="contact" class="py-5 text-center container">
+        <h2 class="fw-bold mb-3"><i class="bi bi-envelope-paper me-2 text-primary"></i>Get In Touch</h2>
+        <p class="text-body-secondary mb-4">Interested in discussing database architecture, system automation, or potential technical collaborations?</p>
+
+        <div class="d-flex justify-content-center gap-3 mb-4">
+            <a href="https://github.com/benyprsty-10" target="_blank" class="btn btn-outline-light"><i class="bi bi-github me-2"></i>GitHub</a>
+            <a href="mailto:emailkamu@example.com" class="btn btn-primary"><i class="bi bi-envelope-fill me-2"></i>Send Email</a>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center border-top border-secondary small text-body-secondary">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Beny. Deployed with GitHub Pages & Bootstrap 5.</p>
+        </div>
     </footer>
 
-    <!-- Bootstrap JS CDN -->
+    <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
