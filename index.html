@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,79 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Devicon CSS (Untuk Logo-Logo Teknologi IT & Database) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+
+    <style>
+        /* Custom Styling Adjustments */
+        .terminal-window {
+            background-color: #0d1117;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .terminal-header {
+            background-color: #161b22;
+            padding: 8px 12px;
+            border-top-left-radius: 7px;
+            border-top-right-radius: 7px;
+            border-bottom: 1px solid #30363d;
+        }
+
+        .dot {
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 4px;
+        }
+
+        .timeline {
+            border-left: 2px solid #0d6efd;
+            padding-left: 20px;
+            margin-left: 10px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 25px;
+        }
+
+            .timeline-item::before {
+                content: "";
+                position: absolute;
+                left: -27px;
+                top: 5px;
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                background-color: #0d6efd;
+            }
+
+        /* Tech Icon Badge Styling */
+        .tech-badge {
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 12px 20px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+            .tech-badge:hover {
+                transform: translateY(-3px);
+                border-color: #0d6efd;
+            }
+
+            .tech-badge i {
+                font-size: 1.5rem;
+            }
+    </style>
 </head>
 <body>
 
@@ -23,6 +96,7 @@
                 <ul class="navbar-nav ms-auto fw-medium">
                     <li class="nav-item"><a class="nav-link active" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#docs">Documentation</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
@@ -50,12 +124,33 @@
         </div>
     </section>
 
+    <!-- STATS BANNER -->
+    <section class="py-4 bg-primary text-white border-top border-bottom border-primary-subtle">
+        <div class="container text-center">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <h3 class="fw-bold mb-0">99.9%</h3>
+                    <small class="text-white-50">Backup Automation Reliability</small>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="fw-bold mb-0">SQL & Scripting</h3>
+                    <small class="text-white-50">Core Technical Specialization</small>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="fw-bold mb-0">Enterprise Linux</h3>
+                    <small class="text-white-50">Environment Management</small>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- 3. SKILLS & TECHNICAL STACK -->
-    <section id="skills" class="py-5 bg-body-tertiary border-top border-bottom border-secondary-subtle">
+    <section id="skills" class="py-5 bg-body-tertiary border-bottom border-secondary-subtle">
         <div class="container">
             <h2 class="fw-bold mb-4 text-center"><i class="bi bi-cpu me-2 text-primary"></i>Core Competencies & Tools</h2>
-            <div class="row g-4">
 
+            <!-- Cards Grid -->
+            <div class="row g-4 mb-5">
                 <!-- Skill Card 1 -->
                 <div class="col-md-4">
                     <div class="card h-100 border-0 shadow-sm">
@@ -94,19 +189,104 @@
                         </div>
                     </div>
                 </div>
+            </div>
 
+            <!-- TABEL / BADGES LOGO TEKNOLOGI -->
+            <div class="text-center">
+                <h6 class="text-uppercase fw-bold text-body-secondary mb-3 small" style="letter-spacing: 1px;">Technologies & Tools Worked With</h6>
+                <div class="d-flex flex-wrap justify-content-center gap-3">
+
+                    <div class="tech-badge">
+                        <i class="devicon-microsoftsqlserver-plain colored"></i>
+                        <span>SQL Server</span>
+                    </div>
+
+                    <div class="tech-badge">
+                        <i class="devicon-postgresql-plain colored"></i>
+                        <span>PostgreSQL</span>
+                    </div>
+
+                    <div class="tech-badge">
+                        <i class="devicon-oracle-original colored"></i>
+                        <span>Oracle DB</span>
+                    </div>
+
+                    <div class="tech-badge">
+                        <i class="devicon-linux-plain colored"></i>
+                        <span>Linux (Red Hat)</span>
+                    </div>
+
+                    <div class="tech-badge">
+                        <i class="devicon-visualstudio-plain colored"></i>
+                        <span>Visual Studio</span>
+                    </div>
+
+                    <div class="tech-badge">
+                        <i class="devicon-bash-plain"></i>
+                        <span>Batch / Bash</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 4. EXPERIENCE SECTION -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="fw-bold mb-4 text-center"><i class="bi bi-briefcase me-2 text-primary"></i>Work Experience</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+                    <div class="timeline">
+                        <!-- Role 1: DBA -->
+                        <div class="timeline-item">
+                            <!-- Header dengan Logo Perusahaan -->
+                            <div class="d-flex align-items-center gap-3 mb-2">
+                                <!-- Logo Perusahaan -->
+                                <div class="bg-white p-2 rounded border shadow-sm d-flex align-items-center justify-content-center" style="width: 52px; height: 52px; flex-shrink: 0;">
+                                    <img src="https://via.placeholder.com/40?text=PLN" alt="PT PLN Icon Plus Logo" class="img-fluid" style="max-height: 36px;">
+                                </div>
+
+                                <div>
+                                    <h5 class="fw-bold mb-0">Database Administrator</h5>
+                                    <div class="text-primary fw-medium">PT PLN Icon Plus</div>
+                                    <div>
+                                        <span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle mt-1">Mar 2022 – Okt 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="text-body-secondary small mt-3 mb-0 ps-3">
+                                <li class="mb-2"><strong>Database Administration & Integrity:</strong> Mengelola dan memelihara ekosistem database <strong>Oracle</strong> guna menjamin integritas data transaksi harian, didukung dengan dokumentasi <em>daily checklist</em> yang terstruktur.</li>
+                                <li class="mb-2"><strong>Infrastructure Deployment:</strong> Melakukan instalasi, konfigurasi, dan komisioning database Oracle di atas sistem operasi <strong>Enterprise Linux</strong> sesuai dengan standar arsitektur perusahaan.</li>
+                                <li class="mb-2"><strong>High Availability & Disaster Recovery (HA/DR):</strong> Bertindak sebagai <strong>PIC Activity Switchover & Switchback</strong> database, memastikan ketersediaan sistem (<em>High Availability</em>) dan kesiapan skenario pemulihan bencana berjalan lancar.</li>
+                                <li class="mb-2"><strong>Backup & Restore Testing:</strong> Melakukan pengujian rutin bulanan (<em>monthly backup & restore testing</em>) untuk memvalidasi integritas data cadangan agar siap digunakan sewaktu-waktu.</li>
+                                <li class="mb-2"><strong>Optimization & Replication Configuration:</strong> Mengonfigurasi strategi cadangan data dengan <strong>Oracle RMAN</strong>, mengimplementasikan replikasi <strong>Oracle Data Guard (ODG)</strong>, serta melakukan <em>query & procedure tuning</em> untuk mengoptimalkan performa database.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- 4. FEATURED PROJECTS -->
-    <section id="projects" class="py-5">
+    <!-- 5. FEATURED PROJECTS -->
+    <section id="projects" class="py-5 bg-body-tertiary border-top border-bottom border-secondary-subtle">
         <div class="container">
-            <h2 class="fw-bold mb-4 text-center"><i class="bi bi-diagram-3 me-2 text-primary"></i>Featured Technical Projects</h2>
-            <div class="row row-cols-1 row-cols-md-2 g-4">
+            <h2 class="fw-bold mb-2 text-center"><i class="bi bi-diagram-3 me-2 text-primary"></i>Featured Technical Projects</h2>
+            <p class="text-center text-body-secondary mb-4">Search or filter through technical systems and automation implementations.</p>
+
+            <!-- Search & Filter Controls -->
+            <div class="row justify-content-center mb-4 g-2">
+                <div class="col-md-6">
+                    <input type="text" id="projectSearch" class="form-control" placeholder="🔍 Search projects by keyword (e.g., SQL, Backup, Robocopy)...">
+                </div>
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4" id="projectContainer">
 
                 <!-- Project 1 -->
-                <div class="col">
+                <div class="col project-card" data-keywords="sql server batch script robocopy backup database automation">
                     <div class="card h-100 shadow border-secondary-subtle">
                         <div class="card-body">
                             <div class="mb-3">
@@ -129,7 +309,7 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div class="col">
+                <div class="col project-card" data-keywords="t-sql database tuning header detail computed columns optimization">
                     <div class="card h-100 shadow border-secondary-subtle">
                         <div class="card-body">
                             <div class="mb-3">
@@ -155,58 +335,62 @@
         </div>
     </section>
 
-    <!-- 5. TECHNICAL DOCUMENTATION & SOP -->
-    <section id="docs" class="py-5 bg-body-tertiary border-top border-bottom border-secondary-subtle">
+    <!-- 6. TECHNICAL DOCUMENTATION & CODE PREVIEW -->
+    <section id="docs" class="py-5">
         <div class="container">
-            <h2 class="fw-bold mb-4 text-center"><i class="bi bi-book me-2 text-info"></i>Documentation & SOPs</h2>
-            <p class="text-center text-body-secondary mb-4">Standard Operating Procedures (SOPs), technical cheat sheets, and architecture documentation maintained for operational reliability.</p>
+            <h2 class="fw-bold mb-4 text-center"><i class="bi bi-book me-2 text-info"></i>Documentation & Code Snippets</h2>
 
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="row g-4 align-items-center">
+                <!-- Terminal Preview -->
+                <div class="col-lg-6">
+                    <div class="terminal-window p-3 shadow">
+                        <div class="terminal-header d-flex align-items-center mb-2">
+                            <span class="dot bg-danger"></span>
+                            <span class="dot bg-warning"></span>
+                            <span class="dot bg-success"></span>
+                            <small class="text-body-secondary ms-2">backup_pipeline.bat</small>
+                        </div>
+                        <pre class="text-success mb-0 small"><code>:: Automated Backup & Network Replication Script
+@echo off
+set TIMESTAMP=%date:~-4%%date:~4,2%%date:~7,2%
+set BACKUP_DIR=D:\Database_Backups
+set NAS_DEST=\\192.168.1.100\Server_Archive
 
-                <!-- Doc 1 -->
-                <div class="col">
-                    <div class="card h-100 border-secondary-subtle shadow-sm">
-                        <div class="card-body">
-                            <div class="badge bg-info text-dark mb-2">SOP Manual</div>
-                            <h5 class="card-title fw-bold">Database Backup & Disaster Recovery Guide</h5>
-                            <p class="card-text text-body-secondary small">
-                                Standard procedure for database disaster recovery, point-in-time restoration, and scheduled backup archive rotation.
-                            </p>
-                        </div>
-                        <div class="card-footer bg-transparent border-0">
-                            <a href="#" class="btn btn-sm btn-outline-info disabled"><i class="bi bi-file-earmark-pdf me-1"></i>View Document</a>
-                        </div>
+echo [INFO] Starting SQL Database Backup...
+sqlcmd -S localhost -Q "BACKUP DATABASE [ProductionDB] TO DISK='%BACKUP_DIR%\ProdDB_%TIMESTAMP%.bak'"
+
+echo [INFO] Replicating backup to NAS via Robocopy...
+robocopy %BACKUP_DIR% %NAS_DEST% *.bak /MIR /Z /R:3 /W:5 /LOG:backup_log.txt
+
+echo [SUCCESS] Backup & Mirroring Completed.</code></pre>
                     </div>
                 </div>
 
-                <!-- Doc 2 -->
-                <div class="col">
-                    <div class="card h-100 border-secondary-subtle shadow-sm">
-                        <div class="card-body">
-                            <div class="badge bg-secondary mb-2">Cheat Sheet</div>
-                            <h5 class="card-title fw-bold">Robocopy & Batch Automation Manual</h5>
-                            <p class="card-text text-body-secondary small">
-                                A reference guide containing tested Robocopy parameters, network directory mirroring, and safe production batch syntax.
-                            </p>
+                <!-- Documentation Guides -->
+                <div class="col-lg-6">
+                    <div class="list-group shadow-sm">
+                        <div class="list-group-item bg-dark text-white border-secondary">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h6 class="mb-1 fw-bold text-info"><i class="bi bi-file-earmark-code me-2"></i>Automated Backup Pipeline SOP</h6>
+                                <small class="badge bg-info text-dark">SOP Manual</small>
+                            </div>
+                            <p class="mb-1 small text-body-secondary">Standard operating procedure for handling point-in-time database restoration and network folder failover.</p>
                         </div>
-                        <div class="card-footer bg-transparent border-0">
-                            <a href="#" class="btn btn-sm btn-outline-info disabled"><i class="bi bi-code-square me-1"></i>View Cheat Sheet</a>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Doc 3 -->
-                <div class="col">
-                    <div class="card h-100 border-secondary-subtle shadow-sm">
-                        <div class="card-body">
-                            <div class="badge bg-primary mb-2">Sysadmin</div>
-                            <h5 class="card-title fw-bold">Red Hat Enterprise Setup Checklist</h5>
-                            <p class="card-text text-body-secondary small">
-                                Comprehensive checklist for baseline Linux server configuration, repository setup, file permissions, and security hardening.
-                            </p>
+                        <div class="list-group-item bg-dark text-white border-secondary">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h6 class="mb-1 fw-bold text-success"><i class="bi bi-terminal me-2"></i>Robocopy Parameters Reference</h6>
+                                <small class="badge bg-secondary">Cheat Sheet</small>
+                            </div>
+                            <p class="mb-1 small text-body-secondary">A curated reference list for zero-data-loss mirroring parameters (`/MIR`, `/Z`, `/R:3`).</p>
                         </div>
-                        <div class="card-footer bg-transparent border-0">
-                            <a href="#" class="btn btn-sm btn-outline-info disabled"><i class="bi bi-check-all me-1"></i>View Checklist</a>
+
+                        <div class="list-group-item bg-dark text-white border-secondary">
+                            <div class="d-flex w-100 justify-content-between align-items-center">
+                                <h6 class="mb-1 fw-bold text-primary"><i class="bi bi-hdd-stack me-2"></i>Red Hat Linux Baseline Setup</h6>
+                                <small class="badge bg-primary">Sysadmin</small>
+                            </div>
+                            <p class="mb-1 small text-body-secondary">Configuration checklist for baseline security hardening and repository setups.</p>
                         </div>
                     </div>
                 </div>
@@ -260,14 +444,14 @@
         </div>
     </div>
 
-    <!-- 6. CONTACT & FOOTER -->
+    <!-- 7. CONTACT & FOOTER -->
     <section id="contact" class="py-5 text-center container">
         <h2 class="fw-bold mb-3"><i class="bi bi-envelope-paper me-2 text-primary"></i>Get In Touch</h2>
         <p class="text-body-secondary mb-4">Interested in discussing database architecture, system automation, or potential technical collaborations?</p>
 
         <div class="d-flex justify-content-center gap-3 mb-4">
             <a href="https://github.com/benyprsty-10" target="_blank" class="btn btn-outline-light"><i class="bi bi-github me-2"></i>GitHub</a>
-            <a href="mailto:emailkamu@example.com" class="btn btn-primary"><i class="bi bi-envelope-fill me-2"></i>Send Email</a>
+            <a href="mailto:benyprsty@gmail.com" class="btn btn-primary"><i class="bi bi-envelope-fill me-2"></i>Send Email</a>
         </div>
     </section>
 
@@ -279,5 +463,22 @@
 
     <!-- Bootstrap 5 JS Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Live Search Script -->
+    <script>
+        document.getElementById('projectSearch').addEventListener('keyup', function () {
+            let filterValue = this.value.toLowerCase();
+            let projectCards = document.querySelectorAll('.project-card');
+
+            projectCards.forEach(function (card) {
+                let keywords = card.getAttribute('data-keywords').toLowerCase();
+                if (keywords.includes(filterValue)) {
+                    card.style.display = '';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
